@@ -1,6 +1,6 @@
-# Project Title
+# Relationship between Income and Happiness
 
-Write a 1-2 sentences that quickly and clearly convey what your repo is for.
+This repo is for storing data and code for our Course project. 
 
 ## Overview
 
@@ -16,7 +16,9 @@ Be sure to list where you got any data used within the project. Be sure to ackno
 
 ## Current Plan
 
-Provide some information about what you intend to doe with the project. You can additionally refer the visitor to your detailed plan document.
+1. Add the datasets into the repository
+2. Wrangle the datasets individually
+3. Combine the datasets into one dataset to use 
 
 ## Repo Structure
 
