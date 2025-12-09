@@ -1,4 +1,6 @@
 library(tidyverse) #loading in tidyverse
+library(ggplot2)
+
 happiRaw <- read.csv("hapiscore_whr.csv") # read in csv file
 str(happiRaw) # checking structure of the data 
 View(happiRaw) # Viewing the data
