@@ -1,0 +1,56 @@
+---
+title: "Global HDI and Happiness"
+format: 
+  pdf:
+    toc: false
+    fig-align: center
+execute: 
+  echo: false
+  warning: false
+editor: visual
+---
+
+## Exploratory Data Analysis
+
+### Satisfying FAIR Principles - Human Development Index (HDI) Data Set
+
+Findable - The data is collected from the United Nations. Because of this, the data is very reliable. Also, the original table contains all of the descriptions for certain terminology. Especially what's considered "High HDI", "Medium HDI", and "Low HDI", all have their definitions listed at the bottom.
+
+Accessible - It's freely accessible and available in the Excel format. The report from the year is also posted in a link that leads to the pdf in the same webpage.
+
+Interoperable - At the end of the provided report, it contains all of the survey questions that were used in the interviews that took place for the countries. However, the country names themselves are not the "standardized" ones and therefore, it would be difficult to use other data tables with that of the HDI table.
+
+Reusable - All of the other columns in the data table are used to calculate the HDI and from there the HDI rank. Therefore, the attributes listed are all important to the argument.
+
+Conclusion - The HDI data set from the UN, overall does meet the requirements of the FAIR standards. However, the "I" or "Interoperable" is not sufficiently met compared to the others.
+
+### Satisfying CARE Principles - HDI Dataset
+
+Collective Benefit - The UN aims to use this data to uniformly and properly track the development of each country in the world. Some territories are also included. The UN uses this data to compare countries data from the HDI standpoint but also from other attributes like mean schooling years or gross national income (GNI). This helps the UN to best figure out what each country or region needs or is affected by the most and the UN can help with suggesting policy changes or even providing aid.
+
+Authority to Control - The data is collected by the United Nations. They had people who were sent out to all or nearly all 195 countries during a specific time period and they collected answers to the survey questions. For countries that had little internet or wifi access, surveys were conducted in-person. While the data and subsequent graphs are available to the public. The countries themselves are unable to determine how their data is used within the report.
+
+Responsibility - The UN analyzed the data they collected themselves and released their findings in the UN report which is a booklet written in English. There is no way to have it translated to a different language. There are no other language options which greatly minimizes who is reached especially given that nearly all 195 countries have data that has been recorded.
+
+Ethics - Data is only summarized by country and therefore nothing confidential has been released in either the report or the raw table. It ethically obtained its data with the consent of its participants.
+
+Conclusion - Because the HDI dataset is sufficient in most of the criteria it mostly passes the CARE principles. It's only weak on the "Responsibility" aspect of how the information is released to the public.
+
+## Graphs and Analysis
+
+When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+You can add options to executable code like this
+
+```{r}
+#| echo: false
+2 * 2
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
+
+## Code Appendix 
