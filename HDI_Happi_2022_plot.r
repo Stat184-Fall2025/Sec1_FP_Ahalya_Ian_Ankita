@@ -15,16 +15,16 @@ str(HDI_HappiScore_2022)
 
 #creating visualization HDI vs HappiScore 2022
 ggplot(
-  data = HDI_HappiScore_2022,
+  data = HDI_HappiScore_2022, # data set
   mapping = aes(
-    x = HDI,
-    y = Happiness_Score_2022
+    x = HDI, # x variable 
+    y = Happiness_Score_2022 # y variable
   )
 ) + geom_point() + labs(
-  title = "Human Development Index vs Happiness Score, Year 2022",
-  y = ylab("Happiness Score"),
-  x = xlab("Human Development Index")
-) + geom_smooth(
-  method = "lm",
+  title = "Human Development Index vs Happiness Score, Year 2022", # title
+  x = xlab("Human Development Index"), # x-axis label
+  y = ylab("Happiness Score") # y-axis label
+) + geom_smooth( # line of best fit
+  method = "lm", # linear model 
   se = FALSE
 )
