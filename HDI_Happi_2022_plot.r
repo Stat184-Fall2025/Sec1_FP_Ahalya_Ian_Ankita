@@ -20,4 +20,11 @@ ggplot(
     x = HDI,
     y = Happiness_Score_2022
   )
-) + geom_point()
+) + geom_point() + labs(
+  title = "Human Development Index vs Happiness Score, Year 2022",
+  y = ylab("Happiness Score"),
+  x = xlab("Human Development Index")
+) + geom_smooth(
+  method = "lm",
+  se = FALSE
+)
