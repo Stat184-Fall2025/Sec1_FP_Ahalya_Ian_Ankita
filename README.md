@@ -1,6 +1,7 @@
 # Stat184 Final Project
 
-Write a 1-2 sentences that quickly and clearly convey what your repo is for.
+This repo is to store and showcase the Final Project about our research and data of Human Development
+Index and Happiness Score for countries in the past couple years. 
 
 ## Overview
 
