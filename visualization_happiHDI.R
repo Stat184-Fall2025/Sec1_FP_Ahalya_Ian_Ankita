@@ -1,6 +1,7 @@
 library(tidyverse)
 library(ggplot2)
 
+
 # creates full data set
 HDI_Happiscore_clean <- left_join(
   x = HDI_clean,
