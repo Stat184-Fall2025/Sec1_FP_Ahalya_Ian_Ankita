@@ -1,11 +1,10 @@
 # Stat184 Final Project
 
-This repo is to store and showcase the Final Project about our research and data of Human Development
-Index and Happiness Score for countries in the past couple years. 
+This repo is to store and showcase the Final Project about our research and data of Human Development Index and Happiness Score for countries in the past couple years. 
 
 ## Overview
 
-Expand on those introductory sentences with a brief but informative description of your project's purpose and goals. This section should help visitors decide whether they should dig deeper into your repo/project.
+This project explores the relationship between Human Development Index (HDI) and Happiness Score across two years, 2022 and 2023. HDI is a measure of a country's development based primarily on three metrics: life expectancy, income per capita, and education. Happiness Score is a survey-based metric of how happy residents in a country are.
 
 ### Interesting Insight (Optional)
 
@@ -28,7 +27,7 @@ For the more in depth plan, access this [document](link)
 
 ## Repo Structure
 
-The repo uses 
+The repo will use simple organization structure. All files will be found in the main branch and without any sub-folders.
 
 ## Authors
 
