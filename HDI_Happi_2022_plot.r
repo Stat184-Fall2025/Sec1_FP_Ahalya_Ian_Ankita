@@ -12,3 +12,12 @@ HDI_HappiScore_2022 <- full_join(
 )
 View(HDI_HappiScore_2022)
 str(HDI_HappiScore_2022)
+
+#creating visualization HDI vs HappiScore 2022
+ggplot(
+  data = HDI_HappiScore_2022,
+  mapping = aes(
+    x = HDI,
+    y = Happiness_Score_2022
+  )
+) + geom_point()
