@@ -17,11 +17,18 @@ Be sure to list where you got any data used within the project. Be sure to ackno
 
 ## Current Plan
 
-Provide some information about what you intend to do with the project. You can additionally refer the visitor to your detailed plan document.
+1. Find the corresponding data sets
+2. Scrape data (if needed)
+3. Wrangle data sets
+4. Create visualizations and tables 
+5. Create Quarto Document
+6. Complete Analysis
+
+For the more in depth plan, access this [document](link)
 
 ## Repo Structure
 
-Use this section to explain the structure of your repo. This should help visitors quickly figure out where they should look to find certain elements. Further, you can use this space to highlight and briefly explain important/key files in the repo.
+The repo uses 
 
 ## Authors
 
