@@ -9,7 +9,15 @@ View(happiRaw) # Viewing the data
 happiClean <- happiRaw %>%
   select(-c(geo, X2005:X2022)) %>% # removing unneeded columns
   rename(
-    Happiness_Score_2023 = X2023 #rename to a more appropriate name
+    Happiness_Score_2023 = X2023, #rename to a more appropriate name
+    Country = name
   )
 
+happiClean_2022 <- happiRaw %>%
+  select(-c(geo, X2005:X2021, X2023)) %>% # removing unneeded columns
+  rename(
+    Happiness_Score_2022 = X2022, #rename to a more appropriate name
+    Country = name
+  )
+View(happiClean_2022)
 View(happiClean) # view the clean data

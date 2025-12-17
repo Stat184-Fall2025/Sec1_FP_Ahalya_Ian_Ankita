@@ -1,6 +1,6 @@
-# Relationship between Income and Happiness
+# Stat184 Final Project
 
-This repo is for storing data and code for our Course project. 
+Write a 1-2 sentences that quickly and clearly convey what your repo is for.
 
 ## Overview
 
@@ -16,15 +16,12 @@ Be sure to list where you got any data used within the project. Be sure to ackno
 
 ## Current Plan
 
-1. Add the datasets into the repository
-2. Wrangle the datasets individually
-3. Combine the datasets into one dataset to use 
+Provide some information about what you intend to do with the project. You can additionally refer the visitor to your detailed plan document.
 
 ## Repo Structure
 
 Use this section to explain the structure of your repo. This should help visitors quickly figure out where they should look to find certain elements. Further, you can use this space to highlight and briefly explain important/key files in the repo.
 
-
 ## Authors
 
-Give information about who are the authors of the project and how people can get in touch if they have questions.
+To learn more about this project, please reach out to [Ankita Bhattacharyya](mailto:azb6686@psu.edu), [Ahalya Kudalugodaarachchi](mailto:amk8529@psu.edu), or [Ian Wang](mailto:itw5047@psu.edu).
