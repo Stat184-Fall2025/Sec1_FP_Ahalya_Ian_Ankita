@@ -77,4 +77,8 @@ You can add options to executable code like this
 
 The `echo: false` option disables the printing of code (only output is displayed).
 
+## Works Cited
+
+Nations, United. “Human Development Index.” *Human Development Reports*, 7 Nov. 2025, hdr.undp.org/data-center/human-development-index#/indicies/HDI.
+
 ## Code Appendix
