@@ -48,7 +48,7 @@ Ethics - Data is only summarized by country and therefore nothing confidential h
 
 Conclusion - Because the HDI dataset is sufficient in most of the criteria it mostly passes the CARE principles. It's only weak on the "Responsibility" aspect of how the information is released to the public.
 
-## Graphs and Analysis
+## Graphs, Tables and Analysis
 
 ```{r}
 #Tidyverse style was followed throughout.
@@ -298,10 +298,10 @@ Happi_stats %>%
   )
 ```
 
-words i guess
+In addition to the graphs, the five number summaries help quantification to the overall distribution. For @tbl-HDItable, the table shows the distribution of human development index for both 2022 and 2023. For 2022, the values ranged from minimum of 0.380 to a maximum of 0.967, and had a median of 0.740. In comparison to 2023, the minimum increased to 0.388 and the mean increased to 0.762. This shows overall improvement in human development in countries. For @tbl-HappiScoretable, in 2022 scores ranged from 12.81 to 77.29, with a median of 57.88. In 2023, the minimum score increase to 14.46 and the median increased to 58.645, showing upward shift in global happiness. The interquartile range also widened, reflecting overall improvements in well-being for nations over all. Over all, both human development index and happiness score shows upward movement in all the summary statistics. Adding the overall positive relationship between the two variables.
 
 ## Author Contribution
-Ahalya worked on the wrangling of the Human Development Index data set, and created the Quarto document, as well as wrote the Exploratory Analysis. Ian wrote the entire README file, as well as the plan document.
+Ahalya worked on the wrangling of the Human Development Index data set, and created the Quarto document, as well as wrote the Exploratory Analysis. Ian wrote the entire README file, as well as the plan document, and worked on the graph for HDI vs Happiness Score, year 2022. Ankita wrangled the Happiness Score data, created the plot for HDI vs Happiness Score, year 2023, created the five number summary tables for the attributed and wrote the graph and table analysis, as well as this contribution. 
 
 ## Code Appendix
 ```{r codeAppend, ref.label=knitr::all_labels(), echo=TRUE, eval=FALSE}
