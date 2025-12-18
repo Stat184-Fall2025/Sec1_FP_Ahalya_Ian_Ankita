@@ -53,6 +53,7 @@ Conclusion - Because the HDI dataset is sufficient in most of the criteria it mo
 ```{r}
 #Tidyverse style was followed throughout.
 # Wrangling/Scraping and Cleaning of HDI and Happiness Score data 2022 -------
+# Primary Author: Ankita, Reviewed by Ahalya
 library(tidyverse)
 library(rvest)
 
@@ -89,7 +90,8 @@ happiClean_2022 <- happiRaw %>%
 #| fig-cap: "A scatter plot of Countries' Human Development Index and Happiness Score for the year 2022."
 #| fig-alt: "The scatterplot shows a postive correlation between a country's Human Development Index and Happiness Score, for the year 2022."
 #| fig-pos: "H"
-# HDI and Happiness Score 2022 Plot
+# HDI and Happiness Score 2022 Plot ---------------------------------------------
+# Primary Author: Ian, Reviewed by Ankita
 # creating the combined data
 HDI_HappiScore_2022 <- full_join(
   x = HDI_2022_clean,
@@ -116,7 +118,7 @@ ggplot(
 
 ```{r}
 # Wrangling and Cleaning of HDI and Happiness Score data 2023 -------
-
+#Primary Author: Ahalya, Reviewed by Ian and Ankita
 HDI_raw <- read_csv("HDR25_Statistical_Annex_HDI_Table(Table 1.csv")
 
 HDI_clean <- HDI_raw %>%
@@ -152,7 +154,9 @@ happiClean_2022 <- happiRaw %>%
 #| fig-cap: "A scatter plot of Countries' Human Development Index and Happiness Score for the year 2023."
 #| fig-alt: "The scatterplot shows a postive correlation between a country's Human Development Index and Happiness Score, for the year 2023."
 #| fig-pos: "H"
-#  HDI and Happiness Score 2023 Plot
+#  HDI and Happiness Score 2023 Plot--------------------------------------------
+#  Primary Author: Ankita, Reviewed by Ahalya
+
 library(tidyverse)
 library(ggplot2)
 
@@ -181,15 +185,19 @@ ggplot(
 )
 
 ```
+A country's human development index is the metric used by the United Nations to compare and assess levels of human development of countries globally. The factors that make the Human Development Index are Life Expectancy (at birth), Education (mean years and expected years of schooling) and the Gross National Income per capita, the metric for Standard of living. The metric tries to capture exactly how well people thrive in a country. The Happiness score is the measure of well-being reported through the World Happiness Report. It is typically collected through survey. We want to see if there is any correlation between how well a country is doing, and how happy its' population claims.
 
 In regards to the graphs separately, both @fig-HDIHappi2022-PLot and @fig-HDIHappi2023-PLot have strong positive correlations between Human Development Index and Happiness Score. For the both the plots the each black dot represents a country. The blue trend line represents shows that the countries with higher human development index, which also means better education, income and life expectancy, tend to report higher happiness levels. This shows that human development could be a significant factor in shaping the well being of nations' populations. Although overall, both graphs show a strong positive correlation, the two plots differ in subtle shifts in point distribution, definitely due to changes in global dynamics like economics and public health. 
 
 ```{r}
 # Creating Summary Statistics for each attribute-----------
+# Primary Author: Ankita, Reviewed by Ahalya and Ian
+
 library(tidyverse)
 library(rvest)
 library(kableExtra)
 
+#generating five number statisitcs for each attribute
 HDI2022_stats <- HDI_HappiScore_2022 %>%
   summarize(
     Countries = n(),
@@ -251,6 +259,7 @@ Happi2023_stats <- HDI_Happiscore_clean %>%
     Year = "2023"
   )
 
+#Combining into data sets
 HDI_stats <- bind_rows(HDI2022_stats, HDI2023_stats)
 Happi_stats <- bind_rows(Happi2022_stats, Happi2023_stats)
 
@@ -262,7 +271,9 @@ Happi_stats <- bind_rows(Happi2022_stats, Happi2023_stats)
 #| tbl-alt: "A table showing a five number summary statistics for Global Human Development Index."
 #| html-table-processing: none
 # Summary Statistics for Global Human Development Table ---------------
+# Primary Author: Ankita, Reviewed by Ahalya and Ian
 
+#rendering the table
 HDI_stats %>%
   kable( 
     caption = "Five Number Summary for Global Human Development Index", # title of table
@@ -284,6 +295,9 @@ HDI_stats %>%
 #| tbl-alt: "A table showing a five number summary statistics for Global Happiness Score."
 #| html-table-processing: none
 # Summary Statistics for Global Happiness Score Table ---------------
+# Primary Author: Ankita, Reviewed by Ahalya and Ian
+
+#rendering the table
 Happi_stats %>%
   kable( 
     caption = "Five Number Summary for Global Happiness Score", # title of table

@@ -23,7 +23,7 @@ Be sure to list where you got any data used within the project. Be sure to ackno
 5. Create Quarto Document
 6. Complete Analysis
 
-For the more in depth plan, access this [document](link)
+For the more in depth plan, access this [document](https://docs.google.com/document/d/1qqVVFuDNrBuOHooilyxMEoEkHQtBnlRM6mdZ3Hz3dWc/edit?usp=sharing)
 
 ## Repo Structure
 
