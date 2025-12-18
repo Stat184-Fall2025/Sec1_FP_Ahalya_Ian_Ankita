@@ -74,6 +74,8 @@ Conclusion - It meets certain CARE principles. However, there could be a way to 
 
 ## Graphs, Tables and Analysis
 
+A country's human development index is the metric used by the United Nations to compare and assess levels of human development of countries globally. The factors that make the Human Development Index are Life Expectancy (at birth), Education (mean years and expected years of schooling) and the Gross National Income per capita, the metric for Standard of living. The metric tries to capture exactly how well people thrive in a country. The Happiness score is the measure of well-being reported through the World Happiness Report. It is typically collected through survey. We want to see if there is any correlation between how well a country is doing, and how happy its' population claims.
+
 ```{r}
 #Tidyverse style was followed throughout.
 # Wrangling/Scraping and Cleaning of HDI and Happiness Score data 2022 -------
@@ -210,8 +212,6 @@ ggplot(
 
 ```
 
-A country's human development index is the metric used by the United Nations to compare and assess levels of human development of countries globally. The factors that make the Human Development Index are Life Expectancy (at birth), Education (mean years and expected years of schooling) and the Gross National Income per capita, the metric for Standard of living. The metric tries to capture exactly how well people thrive in a country. The Happiness score is the measure of well-being reported through the World Happiness Report. It is typically collected through survey. We want to see if there is any correlation between how well a country is doing, and how happy its' population claims.
-
 In regards to the graphs separately, both @fig-HDIHappi2022-PLot and @fig-HDIHappi2023-PLot have strong positive correlations between Human Development Index and Happiness Score. For the both the plots the each black dot represents a country. The blue trend line represents shows that the countries with higher human development index, which also means better education, income and life expectancy, tend to report higher happiness levels. This shows that human development could be a significant factor in shaping the well being of nations' populations. Although overall, both graphs show a strong positive correlation, the two plots differ in subtle shifts in point distribution, definitely due to changes in global dynamics like economics and public health.
 
 ```{r}
@@ -346,6 +346,11 @@ Ahalya worked on the wrangling of the Human Development Index data set, and crea
 ## Works Cited
 
 Nations, United. “Human Development Index.” *Human Development Reports*, 7 Nov. 2025, hdr.undp.org/data-center/human-development-index#/indicies/HDI.
+
+"Happiness Score (WHR)." Gapminder, www.gapminder.org/data/. Accessed 17 Dec. 2025.
+
+United Nations. "Human Development Ranking 2022." Countryeconomy, countryeconomy.com/hdi. Accessed 17 Dec. 2025.
+
 
 
 ## Code Appendix
