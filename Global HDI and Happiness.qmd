@@ -4,7 +4,7 @@ author: "Ahalya Kudalugodaarachchi, Ian Wang, Ankita Bhattacharyya"
 date: "Dec. 17, 2025"
 date-modified: now
 format: 
-  html:
+  pdf:
     embed-resources: true
     fig-align: center
     number-depth: 5
@@ -181,7 +181,8 @@ ggplot(
 )
 
 ```
-narrative text speak speak speaking !!!!
+
+In regards to the graphs separately, both @fig-HDIHappi2022-PLot and @fig-HDIHappi2023-PLot have strong positive correlations between Human Development Index and Happiness Score. For the both the plots the each black dot represents a country. The blue trend line represents shows that the countries with higher human development index, which also means better education, income and life expectancy, tend to report higher happiness levels. This shows that human development could be a significant factor in shaping the well being of nations' populations. Although overall, both graphs show a strong positive correlation, the two plots differ in subtle shifts in point distribution, definitely due to changes in global dynamics like economics and public health. 
 
 ```{r}
 # Creating Summary Statistics for each attribute-----------
@@ -257,7 +258,7 @@ Happi_stats <- bind_rows(Happi2022_stats, Happi2023_stats)
 
 ```{r}
 #| label: tbl-HDItable
-#| tbl-cap: "Five Number Summary for Global Human Development Index"
+#| tbl-cap: "Five Number Summary for Global Human Development Index."
 #| tbl-alt: "A table showing a five number summary statistics for Global Human Development Index."
 #| html-table-processing: none
 # Summary Statistics for Global Human Development Table ---------------
@@ -271,7 +272,7 @@ HDI_stats %>%
   ) %>% 
   kableExtra::kable_styling(
     bootstrap_options = c("striped","condensed"), 
-    font_size = 16, 
+    font_size = 10, 
     stripe_color = "gray!10" # adds back stripes
   )
 
@@ -279,7 +280,7 @@ HDI_stats %>%
 
 ```{r}
 #| label: tbl-HappiScoretable
-#| tbl-cap: "Five Number Summary for Global Happiness Score"
+#| tbl-cap: "Five Number Summary for Global Happiness Score."
 #| tbl-alt: "A table showing a five number summary statistics for Global Happiness Score."
 #| html-table-processing: none
 # Summary Statistics for Global Happiness Score Table ---------------
@@ -292,11 +293,15 @@ Happi_stats %>%
   ) %>% 
   kableExtra::kable_styling(
     bootstrap_options = c("striped","condensed"), 
-    font_size = 16, 
+    font_size = 10, 
     stripe_color = "gray!10" # adds back stripes
   )
 ```
+
+words i guess
+
 ## Author Contribution
+Ahalya worked on the wrangling of the Human Development Index data set, and created the Quarto document, as well as wrote the Exploratory Analysis. Ian wrote the entire README file, as well as the plan document.
 
 ## Code Appendix
 ```{r codeAppend, ref.label=knitr::all_labels(), echo=TRUE, eval=FALSE}
