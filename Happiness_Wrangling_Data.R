@@ -2,8 +2,8 @@ library(tidyverse) #loading in tidyverse
 library(ggplot2)
 
 happiRaw <- read.csv("hapiscore_whr.csv") # read in csv file
-str(happiRaw) # checking structure of the data 
-View(happiRaw) # Viewing the data
+#str(happiRaw) # checking structure of the data 
+#View(happiRaw) # Viewing the data
 
 # cleaning the data
 happiClean <- happiRaw %>%
@@ -19,5 +19,5 @@ happiClean_2022 <- happiRaw %>%
     Happiness_Score_2022 = X2022, #rename to a more appropriate name
     Country = name
   )
-View(happiClean_2022)
-View(happiClean) # view the clean data
+#View(happiClean_2022)
+#View(happiClean) # view the clean data
