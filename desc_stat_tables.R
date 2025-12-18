@@ -13,7 +13,10 @@ HDI2022_stats <- HDI_HappiScore_2022 %>%
     Maximum = max(HDI, na.rm = TRUE),
     Mean = mean(HDI, na.rm = TRUE),
     `Standard Deviation` = sd(HDI, na.rm = TRUE),
-  ) 
+  ) %>%
+  mutate(
+    Year = "2022"
+  )
 
 Happi2022_stats <- HDI_HappiScore_2022 %>%
   summarize(
@@ -25,7 +28,10 @@ Happi2022_stats <- HDI_HappiScore_2022 %>%
     Maximum = max(Happiness_Score_2022, na.rm = TRUE),
     Mean = mean(Happiness_Score_2022, na.rm = TRUE),
     `Standard Deviation` = sd(Happiness_Score_2022, na.rm = TRUE)
-  ) 
+  ) %>%
+  mutate(
+    Year = "2022"
+  )
 
 
 HDI2023_stats <- HDI_Happiscore_clean %>%
@@ -38,7 +44,10 @@ HDI2023_stats <- HDI_Happiscore_clean %>%
     Maximum = max(HDI, na.rm = TRUE),
     Mean = mean(HDI, na.rm = TRUE),
     `Standard Deviation` = sd(HDI, na.rm = TRUE),
-  ) 
+  ) %>%
+  mutate(
+    Year = "2023"
+  )
 
 Happi2023_stats <- HDI_Happiscore_clean %>%
   summarize(
@@ -50,13 +59,17 @@ Happi2023_stats <- HDI_Happiscore_clean %>%
     Maximum = max(Happiness_Score_2023, na.rm = TRUE),
     Mean = mean(Happiness_Score_2023, na.rm = TRUE),
     `Standard Deviation` = sd(Happiness_Score_2023, na.rm = TRUE)
-  ) 
+  ) %>%
+  mutate(
+    Year = "2023"
+  )
 
+HDI_stats <- bind_rows(HDI2022_stats, HDI2023_stats)
+Happi_stats <- bind_rows(Happi2022_stats, Happi2023_stats)
 
-
-HDI2022_stats %>%
+HDI_stats %>%
   kable( 
-    caption = "Five Number Summary for Global Human Development Index, Year 2022", # title of table
+    caption = "Five Number Summary for Global Human Development Index", # title of table
     booktabs = TRUE,
     align = c("l", rep("c",6)),
     format.args = list(big.mark = ',') # adds separators to the number totals
@@ -68,37 +81,9 @@ HDI2022_stats %>%
   )
 
 
-HDI2023_stats %>%
+Happi_stats %>%
   kable( 
-    caption = "Five Number Summary for Global Human Development Index, Year 2023", # title of table
-    booktabs = TRUE,
-    align = c("l", rep("c",6)),
-    format.args = list(big.mark = ',') # adds separators to the number totals
-  ) %>% 
-  kableExtra::kable_styling(
-    bootstrap_options = c("striped","condensed"), 
-    font_size = 16, 
-    stripe_color = "gray!10" # adds back stripes
-  )
-
-
-Happi2022_stats %>%
-  kable( 
-    caption = "Five Number Summary for Global Happiness Score, Year 2022", # title of table
-    booktabs = TRUE,
-    align = c("l", rep("c",6)),
-    format.args = list(big.mark = ',') # adds separators to the number totals
-  ) %>% 
-  kableExtra::kable_styling(
-    bootstrap_options = c("striped","condensed"), 
-    font_size = 16, 
-    stripe_color = "gray!10" # adds back stripes
-  )
-
-
-Happi2023_stats %>%
-  kable( 
-    caption = "Five Number Summary for Global Happiness Score, Year 2023", # title of table
+    caption = "Five Number Summary for Global Happiness Score", # title of table
     booktabs = TRUE,
     align = c("l", rep("c",6)),
     format.args = list(big.mark = ',') # adds separators to the number totals
