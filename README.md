@@ -1,10 +1,10 @@
-# Project Title
+# Stat184 Final Project
 
-Write a 1-2 sentences that quickly and clearly convey what your repo is for.
+This repo is to store and showcase the Final Project about our research and data of Human Development Index and Happiness Score for countries in the past couple years. 
 
 ## Overview
 
-Expand on those introductory sentences with a brief but informative description of your project's purpose and goals. This section should help visitors decide whether they should dig deeper into your repo/project.
+This project explores the relationship between Human Development Index (HDI) and Happiness Score across two years, 2022 and 2023. HDI is a measure of a country's development based primarily on three metrics: life expectancy, income per capita, and education. Happiness Score is a survey-based metric of how happy residents in a country are.
 
 ### Interesting Insight (Optional)
 
@@ -12,17 +12,23 @@ This is optional but highly recommended. You'll include one interesting insight 
 
 ## Data Sources and Acknowledgements
 
-Be sure to list where you got any data used within the project. Be sure to acknowledge any one whose work or elements you're drawing upon.
+Data was collected from the United Nation's Human Development Reports, Gapminder.org and countryeconomy.com. 
 
 ## Current Plan
 
-Provide some information about what you intend to doe with the project. You can additionally refer the visitor to your detailed plan document.
+1. Find the corresponding data sets
+2. Scrape data (if needed)
+3. Wrangle data sets
+4. Create visualizations and tables 
+5. Create Quarto Document
+6. Complete Analysis
+
+For the more in depth plan, access this [document](https://docs.google.com/document/d/1qqVVFuDNrBuOHooilyxMEoEkHQtBnlRM6mdZ3Hz3dWc/edit?usp=sharing)
 
 ## Repo Structure
 
-Use this section to explain the structure of your repo. This should help visitors quickly figure out where they should look to find certain elements. Further, you can use this space to highlight and briefly explain important/key files in the repo.
-
+The repo will use simple organization structure. All files will be found in the main branch and without any sub-folders.
 
 ## Authors
 
-Give information about who are the authors of the project and how people can get in touch if they have questions.
+To learn more about this project, please reach out to [Ankita Bhattacharyya](mailto:azb6686@psu.edu), [Ahalya Kudalugodaarachchi](mailto:amk8529@psu.edu), or [Ian Wang](mailto:itw5047@psu.edu).
