@@ -6,10 +6,6 @@ This repo is to store and showcase the Final Project about our research and data
 
 This project explores the relationship between Human Development Index (HDI) and Happiness Score across two years, 2022 and 2023. HDI is a measure of a country's development based primarily on three metrics: life expectancy, income per capita, and education. Happiness Score is a survey-based metric of how happy residents in a country are.
 
-### Interesting Insight (Optional)
-
-This is optional but highly recommended. You'll include one interesting insight from your project as part of the README. This insight is most effective when you include a visual. Keep in mind that this visual must be included as an image file (e.g., JPG, PNG, etc.). You can export plots created with `{ggplot2}` by using the function `ggsave`.
-
 ## Data Sources and Acknowledgements
 
 Data was collected from the United Nation's Human Development Reports, Gapminder.org and countryeconomy.com. 
