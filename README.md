@@ -19,7 +19,7 @@ Data was collected from the United Nation's Human Development Reports, Gapminder
 5. Create Quarto Document
 6. Complete Analysis
 
-For the more in depth plan, access this [document](https://docs.google.com/document/d/1qqVVFuDNrBuOHooilyxMEoEkHQtBnlRM6mdZ3Hz3dWc/edit?usp=sharing)
+For the more in depth plan, please access this [document](https://docs.google.com/document/d/1qqVVFuDNrBuOHooilyxMEoEkHQtBnlRM6mdZ3Hz3dWc/edit?usp=sharing)
 
 ## Repo Structure
 
