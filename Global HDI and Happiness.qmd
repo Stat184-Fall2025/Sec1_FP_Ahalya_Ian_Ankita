@@ -48,6 +48,30 @@ Ethics - Data is only summarized by country and therefore nothing confidential h
 
 Conclusion - Because the HDI dataset is sufficient in most of the criteria it mostly passes the CARE principles. It's only weak on the "Responsibility" aspect of how the information is released to the public.
 
+### Sustainable FAIR Principles - World Happiness Report (WHR)
+
+Findable - The World Happiness Report collected the data and made the booklet with analysis and figures and tables at the end. Any other sites that contain this data merely copied it from this report.
+
+Accessible - It is widely available and free to access and download.
+
+Interoperable - The questions were based on survey questions that interviewers asked participants to rate certain ideas on a scale from 1-10 and from there they averaged out the response across the respective country. However, it does assume some terminology to be already understood and is not found near the table but instead in the report.
+
+Reusable - It is reusable since it clearly states the survey questions that had been asked and how they took the survey for nearly all 195 countries.
+
+Conclusion - The FAIR requirements were met, although it could do a better job in the Interoperable area specifically clearly defining terminology.
+
+### Sustainable CARE Principles - World Happiness Report (WHR)
+
+Collective Benefit - It's intended to help guide public policies and inform world leaders what exactly is impacting their citizens happiness in their day-to-day lives.
+
+Authority to Control - Similar to the HDI data, this is done by a private organization and therefore the local communities don't have access to their own data rather just the summarized and processed data that is released with every other country, when the report is published.
+
+Responsiblity - There are cultural biases with answers. For example what one culture considers important may not be the same to another. It's important to analyze the data in the context it's meant to be analyzed and to be aware of the cultural differences between nations.
+
+Ethics - It is entirely confidential and no single participant's response is released. Rather all responses are averaged an then entered into their country's entry. This makes all participants viewed as a member of their respective country rather than individuals.
+
+Conclusion - It meets certain CARE principles. However, there could be a way to allow countries to access their own raw data even if it's not released to the public per se. The countries should be able to see their own specific data to make better judgments for their policies.
+
 ## Graphs, Tables and Analysis
 
 ```{r}
@@ -185,9 +209,10 @@ ggplot(
 )
 
 ```
+
 A country's human development index is the metric used by the United Nations to compare and assess levels of human development of countries globally. The factors that make the Human Development Index are Life Expectancy (at birth), Education (mean years and expected years of schooling) and the Gross National Income per capita, the metric for Standard of living. The metric tries to capture exactly how well people thrive in a country. The Happiness score is the measure of well-being reported through the World Happiness Report. It is typically collected through survey. We want to see if there is any correlation between how well a country is doing, and how happy its' population claims.
 
-In regards to the graphs separately, both @fig-HDIHappi2022-PLot and @fig-HDIHappi2023-PLot have strong positive correlations between Human Development Index and Happiness Score. For the both the plots the each black dot represents a country. The blue trend line represents shows that the countries with higher human development index, which also means better education, income and life expectancy, tend to report higher happiness levels. This shows that human development could be a significant factor in shaping the well being of nations' populations. Although overall, both graphs show a strong positive correlation, the two plots differ in subtle shifts in point distribution, definitely due to changes in global dynamics like economics and public health. 
+In regards to the graphs separately, both @fig-HDIHappi2022-PLot and @fig-HDIHappi2023-PLot have strong positive correlations between Human Development Index and Happiness Score. For the both the plots the each black dot represents a country. The blue trend line represents shows that the countries with higher human development index, which also means better education, income and life expectancy, tend to report higher happiness levels. This shows that human development could be a significant factor in shaping the well being of nations' populations. Although overall, both graphs show a strong positive correlation, the two plots differ in subtle shifts in point distribution, definitely due to changes in global dynamics like economics and public health.
 
 ```{r}
 # Creating Summary Statistics for each attribute-----------
@@ -315,9 +340,16 @@ Happi_stats %>%
 In addition to the graphs, the five number summaries help quantification to the overall distribution. For @tbl-HDItable, the table shows the distribution of human development index for both 2022 and 2023. For 2022, the values ranged from minimum of 0.380 to a maximum of 0.967, and had a median of 0.740. In comparison to 2023, the minimum increased to 0.388 and the mean increased to 0.762. This shows overall improvement in human development in countries. For @tbl-HappiScoretable, in 2022 scores ranged from 12.81 to 77.29, with a median of 57.88. In 2023, the minimum score increase to 14.46 and the median increased to 58.645, showing upward shift in global happiness. The interquartile range also widened, reflecting overall improvements in well-being for nations over all. Over all, both human development index and happiness score shows upward movement in all the summary statistics. Adding the overall positive relationship between the two variables.
 
 ## Author Contribution
-Ahalya worked on the wrangling of the Human Development Index data set, and created the Quarto document, as well as wrote the Exploratory Analysis. Ian wrote the entire README file, as well as the plan document, and worked on the graph for HDI vs Happiness Score, year 2022. Ankita wrangled the Happiness Score data, created the plot for HDI vs Happiness Score, year 2023, created the five number summary tables for the attributed and wrote the graph and table analysis, as well as this contribution. 
+
+Ahalya worked on the wrangling of the Human Development Index data set, and created the Quarto document, as well as wrote the Exploratory Analysis. Ian wrote the entire README file, as well as the plan document, and worked on the graph for HDI vs Happiness Score, year 2022. Ankita wrangled the Happiness Score data, created the plot for HDI vs Happiness Score, year 2023, created the five number summary tables for the attributed and wrote the graph and table analysis, as well as this contribution.
+
+## Works Cited
+
+Nations, United. “Human Development Index.” *Human Development Reports*, 7 Nov. 2025, hdr.undp.org/data-center/human-development-index#/indicies/HDI.
+
 
 ## Code Appendix
+
 ```{r codeAppend, ref.label=knitr::all_labels(), echo=TRUE, eval=FALSE}
 
 ```
