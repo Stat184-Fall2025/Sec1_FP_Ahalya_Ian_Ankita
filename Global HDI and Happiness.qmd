@@ -36,6 +36,30 @@ Ethics - Data is only summarized by country and therefore nothing confidential h
 
 Conclusion - Because the HDI dataset is sufficient in most of the criteria it mostly passes the CARE principles. It's only weak on the "Responsibility" aspect of how the information is released to the public.
 
+### Sustainable FAIR Principles - World Happiness Report (WHR)
+
+Findable - The World Happiness Report collected the data and made the booklet with analysis and figures and tables at the end. Any other sites that contain this data merely copied it from this report.
+
+Accessible - It is widely available and free to access and download.
+
+Interoperable - The questions were based on survey questions that interviewers asked participants to rate certain ideas on a scale from 1-10 and from there they averaged out the response across the respective country. However, it does assume some terminology to be already understood and is not found near the table but instead in the report.
+
+Reusable - It is reusable since it clearly states the survey questions that had been asked and how they took the survey for nearly all 195 countries.
+
+Conclusion - The FAIR requirements were met, although it could do a better job in the Interoperable area specifically clearly defining terminology.
+
+### Sustainable CARE Principles - World Happiness Report (WHR)
+
+Collective Benefit - It's intended to help guide public policies and inform world leaders what exactly is impacting their citizens happiness in their day-to-day lives.
+
+Authority to Control - Similar to the HDI data, this is done by a private organization and therefore the local communities don't have access to their own data rather just the summarized and processed data that is released with every other country, when the report is published.
+
+Responsiblity - There are cultural biases with answers. For example what one culture considers important may not be the same to another. It's important to analyze the data in the context it's meant to be analyzed and to be aware of the cultural differences between nations.
+
+Ethics - It is entirely confidential and no single participant's response is released. Rather all responses are averaged an then entered into their country's entry. This makes all participants viewed as a member of their respective country rather than individuals.
+
+Conclusion - It meets certain CARE principles. However, there could be a way to allow countries to access their own raw data even if it's not released to the public per se. The countries should be able to see their own specific data to make better judgments for their policies.
+
 ## Graphs and Analysis
 
 When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
@@ -53,4 +77,4 @@ You can add options to executable code like this
 
 The `echo: false` option disables the printing of code (only output is displayed).
 
-## Code Appendix 
+## Code Appendix
