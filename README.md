@@ -12,7 +12,7 @@ This is optional but highly recommended. You'll include one interesting insight 
 
 ## Data Sources and Acknowledgements
 
-Be sure to list where you got any data used within the project. Be sure to acknowledge any one whose work or elements you're drawing upon.
+Data was collected from the United Nation's Human Development Reports, Gapminder.org and countryeconomy.com. 
 
 ## Current Plan
 
